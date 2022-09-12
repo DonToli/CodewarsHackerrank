@@ -1,4 +1,4 @@
-package HackerRank;
+package HackerRank.TimeConversion;
 import java.io.*;
 import java.util.*;
 
