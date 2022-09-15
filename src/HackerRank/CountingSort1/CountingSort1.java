@@ -23,8 +23,15 @@ class Result {
 
     public static List<Integer> countingSort(List<Integer> arr) {
         // Write your code here
-
-        return arr;
+        int [] frequencyArrays = new int[100];
+        Arrays.fill(frequencyArrays,0);
+        for (int a : arr){
+            frequencyArrays[a]++;
+        }List<Integer> results = new ArrayList<>();
+        for(int i = 0;i<100;i++){
+            results.add(frequencyArrays[i]);
+        }
+        return results;
     }
 
 }
