@@ -1,4 +1,4 @@
-package HackerRank;
+package HackerRank.DiagonalDifference;
 import java.io.*;
 import java.util.*;
 import java.util.stream.*;
@@ -20,13 +20,13 @@ class Resul {
         int firstDiagonal = 0;
         int secondDiagonal = 0;
 
-        for (int i = 0; i< arr.size();i++){
-            firstDiagonal+=arr.get(i).get(i);
+        for (int i = 0; i< arr.size();i++){    //проходим по первому массиву
+            firstDiagonal+=arr.get(i).get(i);  //сумма диагонали слева направо
         }
-        for (int i = 0; i < arr.size(); i++) {
-            secondDiagonal+=arr.get(i).get(arr.size()-(i+1));
+        for (int i = 0; i < arr.size(); i++) {  //проходим по второму массиву
+            secondDiagonal+=arr.get(i).get(arr.size()-(i+1));  //сумма диагонали справа налево
         }
-        return Math.abs(firstDiagonal-secondDiagonal);
+        return Math.abs(firstDiagonal-secondDiagonal); //абсолютное значение разницы диагоналей
     }
 
 }
